@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+        class Aluno
+        {
+            constructor(aluno, nota1, nota2){
+            this.aluno = aluno
+            this.nota1 = nota1
+            this.nota2 = nota2           
+            }
+            
+            calcularMedia(){
+                return((this.nota1+this.nota2)/2).toFixed(2);
+        }
+
+        }
+        let aluno1 = new Aluno ("Carl Johnson", 10, 8)
+        console.log(`A média do aluno é ${aluno1.calcularMedia()}`);
+
+
+    </script>
+</body>
+</html>

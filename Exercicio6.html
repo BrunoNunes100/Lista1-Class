@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <script>
+    class Empresa
+    {
+        constructor(nome, receitaAnual, despesasAnuais)
+        {
+        this.nome = nome;
+        this.receitaAnual = receitaAnual
+        this.despesasAnuais = despesasAnuais
+        }
+
+        calcularLucroAnual(){
+            return(this.receitaAnual-this.despesasAnuais)
+        }
+        exibirRelatorio(){
+            return("nome"+ this.nome, "Receita Anual"+ this.receitaAnual, "Despesas Anuais"+ this.despesasAnuais)
+        }
+   
+    }
+let Empresa1 = new Empresa("Caetano", 1000, 500)
+let Empresa2 = new Empresa("Lenovo", 2000, 1000)
+    
+console.log(`O lucro é ${Empresa1.calcularLucroAnual}, RELATÓRIO ${Empresa1.calcularLucroAnual}`);
+console.log(`O lucro é ${Empresa2.calcularLucroAnual}, RELATÓRIO ${Empresa2.calcularLucroAnual}`);
+</script>
+</body>
+</html>
