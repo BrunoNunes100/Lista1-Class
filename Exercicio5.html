@@ -18,12 +18,14 @@
             
             informacaoFilme()
             {
-                return("Titulo" + this.titulo, "Genero" + this.genero, "Duração" + this.duracao)
+                console.log("Titulo: " + this.titulo);
+                console.log("Genero: " + this.genero);
+                console.log("Duração: " + this.duracao);
         }
 
         }
         let Filme1 = new Filme("Bad boys", "Ação", "2:00h")
-        console.log(Filme1.informacaoFilme);
+        console.log(Filme1.informacaoFilme());
 
 
     </script>

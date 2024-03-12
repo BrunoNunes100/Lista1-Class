@@ -18,12 +18,14 @@
             
             informacaoCelular()
             {
-                return("Marca" + this.marca, "Modelo" + this.modelo, "Armazenamento" + this.armazenamneto)
+                console.log("Marca: " + this.marca);
+                console.log("Modelo: " + this.modelo);
+                console.log("Armazenamento: " + this.armazenamneto);
         }
 
         }
         let Celular1 = new Celular("Xiaomi", "Redmin note", "128 GB")
-        console.log(Celular1.informacaoCelular);
+        console.log(Celular1.informacaoCelular());
 
 
     </script>

@@ -21,15 +21,17 @@
             return(this.receitaAnual-this.despesasAnuais)
         }
         exibirRelatorio(){
-            return("nome"+ this.nome, "Receita Anual"+ this.receitaAnual, "Despesas Anuais"+ this.despesasAnuais)
+            console.log("Nome: "+ this.nome);
+            console.log("Receita Anual: "+ this.receitaAnual);
+            console.log("Despesas Anuais: "+ this.despesasAnuais);
         }
    
     }
 let Empresa1 = new Empresa("Caetano", 1000, 500)
 let Empresa2 = new Empresa("Lenovo", 2000, 1000)
     
-console.log(`O lucro é ${Empresa1.calcularLucroAnual}, RELATÓRIO ${Empresa1.calcularLucroAnual}`);
-console.log(`O lucro é ${Empresa2.calcularLucroAnual}, RELATÓRIO ${Empresa2.calcularLucroAnual}`);
+console.log(`O lucro é ${Empresa1.calcularLucroAnual()} ${Empresa1.exibirRelatorio()}`);
+console.log(`O lucro é ${Empresa2.calcularLucroAnual()} ${Empresa2.exibirRelatorio()}`);
 </script>
 </body>
 </html>
